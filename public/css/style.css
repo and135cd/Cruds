@@ -1,0 +1,47 @@
+.fondo{
+    background-image: url(https://sharketeros.com/wp-content/uploads/2021/07/Tamano_de_las_imagenes_y_videos_en_redes_sociales_2021_img1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center{
+    text-align: center;
+}
+
+.margen{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.margen1{
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.margenleft{
+    margin-left: 4%;
+}
+.margenleft1{
+    margin-left: 3.3%;
+}
+.margenleft2{
+    margin-left: 2.8%;
+}
+.margenleft3{
+    margin-left: 2%;
+}
+
+.margenbutton{
+    margin-top: 2%;
+    margin-left: 15%;
+    color: rgb(0, 0, 0);
+    background-color: #0022ff ;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    text-anchor: middle;
+}
+
+footer{
+    margin-top: 10%;
+}
