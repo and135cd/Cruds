@@ -19,8 +19,7 @@ use App\Http\Controllers\Dashboard\CategoriesController;
 
 Route::get('/', function () {
     return view('welcome');
-});
-
+})->name('home');
 
 
 /* Route::delete('cliente/{id}', function ($id){
@@ -31,4 +30,5 @@ Route::get('/', function () {
 
 Route::resource('post', PostController::class);
 Route::resource('categories', CategoriesController::class);
+
 

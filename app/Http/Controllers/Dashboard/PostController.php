@@ -17,8 +17,13 @@ class PostController extends Controller
     public function index()
     {
         /* sirve para mostrar e ir a algo (echo) */
-        echo('Hola');   
-        echo('Adios');
+        /* echo('Hola');   
+        echo('Adios'); */
+        $posts=Post::orderBy('created_at','asc');
+        /* add=$posts; */
+        echo view ('dashboard.post.index',['posts'=>$posts]); /* se cambia el modelo */
+
+
 
 /*         $datos['empleados']=Empleados::paginate(5);
         return view(); */

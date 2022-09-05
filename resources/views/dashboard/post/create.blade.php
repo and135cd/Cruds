@@ -13,31 +13,17 @@
     <title>POST</title>
 </head>
 <body class="fondo">
+    @include('dashboard.partials.nav-header-main')
+
     <!-- dashboar/post/create.blade.php -->
     <h1 class="center">Ingreso de Post</h1><br>
     <h2 class="center">Andrew Roan Castro Diaz 201908011</h2>
     <br><br>
     <img src="images/1.png" alt="">
         <form action="{{route('post.store')}}" method="post""> 
-            <!-- @if ($errors->any())
-                @foreach ($errors->all() as $error)
-                    <div class="alert alert-danger">
-                        A simple danger alert—check it out! 
-                        {{$error}}
-                    </div>  
-                @endforeach
-            @endif -->
-            
-            <div>
-                
-                <div class="margen1">
-                    @csrf
-                    @if(session('status'))
-                        <div class="alert alert-success" >
-                            {{session('status')}}
-                        </div>
-                    @endif
+        @include('dashboard.partials.sesion-flash-status')
 
+        
                     <label for="" >Titulo</label>
                     <input class="margenleft" type="text" name="title">
                         @error('title')
