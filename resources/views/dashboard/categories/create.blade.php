@@ -8,17 +8,15 @@
     <link rel="stylesheet" href="{{ asset('css/>app.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-
-    
-    <title>POST</title>
+    <title>CATEGORIES</title>
 </head>
-<body class="fondo">
+<body class="fondo1">
     <!-- dashboar/post/create.blade.php -->
-    <h1 class="center">Ingreso de Post</h1><br>
+    <h1 class="center">Ingreso de Create</h1><br>
     <h2 class="center">Andrew Roan Castro Diaz 201908011</h2>
     <br><br>
     <img src="images/1.png" alt="">
-        <form action="{{route('post.store')}}" method="post""> 
+        <form action="{{route('categories.store')}}" method="post""> 
             <!-- @if ($errors->any())
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger">
@@ -30,7 +28,7 @@
             
             <div>
                 
-                <div class="margen1">
+                <div class="center">
                     @csrf
                     @if(session('status'))
                         <div class="alert alert-success" >
@@ -43,47 +41,47 @@
                         @error('title')
                                 <small class="text-danger">{{ $message }}</small>
                         @enderror
-                    <br>
-                </div>
-                
 
-                <div class="margen">
-                    <label for="">Url Corta</label>
+            
+                    <label for="" class="margenleft">Url Corta</label>
                     <input class="margenleft1" type="text" name="slug">
                         @error('slug')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
-                    <br>
-                </div>
 
-                <div class="margen">
+                    </div>
+                    
+                <center>
+                    <button  class="margenbutton1" type="">Enviar  </button>
+                    
+                </center>
+                <!-- <div class="margen">
                     <label for="">Contenido</label>
                     <textarea class="margenleft2" name="content" id="" cols="20" rows="1"></textarea>
                         @error('content')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     <br>
-                </div>
+                </div> -->
 
-                <div class="margen">
+                <!-- <div class="margen">
                     <label for="">Descripcion</label>
                     <textarea class="margenleft3" name="description" id="" cols="20" rows="1"></textarea>
                         @error('content')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     <br>
-                </div>
+                </div> -->
 
-                <button  class="margenbutton" type="">Enviar  </button>
-                <img src="https://cdn-icons-png.flaticon.com/512/149/149347.png?w=740&t=st=1661401471~exp=1661402071~hmac=00d3606d4fb12589c070122ec31d13139e025bd68d94774411aec3948683b869" alt="" width="1.5%" height="5%">
+                
             </div>
             
         </form>
 
-    <div> <!-- botones -->
-    <button type="button" class="btn btn-success">Editar</button>
-    <button type="button" class="btn btn-danger">Eliminar</button>
-    </div>
+<!--     <div> BOTONES  
+        <button type="button" class="btn btn-success">Editar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </div> -->
 
     <!--     <div class="col-md-12">
                 <div >

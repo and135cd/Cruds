@@ -1,5 +1,12 @@
 .fondo{
+
     background-image: url(https://sharketeros.com/wp-content/uploads/2021/07/Tamano_de_las_imagenes_y_videos_en_redes_sociales_2021_img1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fondo1{
+    background-image: url(https://cdni.russiatoday.com/actualidad/public_images/2017.01/original/587b5433c36188141d8b4595.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,6 +43,15 @@
     margin-left: 15%;
     color: rgb(0, 0, 0);
     background-color: #0022ff ;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    text-anchor: middle;
+}
+.margenbutton1{
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+    background-color: #80b8e9 ;
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
